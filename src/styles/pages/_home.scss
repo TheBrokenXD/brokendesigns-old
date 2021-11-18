@@ -2,31 +2,35 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 15%;
+    right: 10%;
     h1 {
         color: $black;
-        font-size: 5.2rem;
-        letter-spacing: -3px;
+        font-size: clamp(5rem, 8.8vw, 15rem);
+        letter-spacing: -6px;
         font-weight: 700;
     }
     .secondary-headline {
         display: flex;
         gap: 0.8rem;
+        color: $primaryColor;
+        transition: all .3s $ease;
+        &:hover {
+            color: #007FB1;
+            padding-left: 1rem;
+        }
         h2 {
-            color: $primaryColor;
-            font-size: 3.5rem;
+            font-size: clamp(2.5rem, 4.1vw, 8rem);
             text-transform: uppercase;
             font-weight: 700;
         }
         .right-arrow {
-            color: $primaryColor;
-            font-size: 3.5rem;
+            font-size: clamp(2.5rem, 4.1vw, 8rem);
         }
     }
 
     h5 {
-        padding-top: 1.5em;
-        font-size: 1rem;
+        padding-top: 1em;
+        font-size: clamp(1rem, 1.3vw, 2rem);
         font-weight: 400;
         color: #41484D;
     }

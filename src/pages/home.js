@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 //styles
 import '../styles/app.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,10 +10,10 @@ function home() {
         <div className="container">
             <div className="headline-project">
                 <h1>2021</h1>
-                <div className="secondary-headline">
+                <Link to="/reel"><div className="secondary-headline">
                     <h2>Motion Reel</h2>
                     <FontAwesomeIcon className="right-arrow" icon={faLongArrowAltRight}/>
-                </div>
+                </div></Link>
                 <h5>2021 was an awesome year! Look how it reflected on my motion design skills ;)</h5>
             </div>
         </div>

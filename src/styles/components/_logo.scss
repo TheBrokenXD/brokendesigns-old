@@ -2,6 +2,6 @@
     position: absolute;
     top: 3%;
     right: 3%;
-    width: 4rem;
+    width: clamp(3rem, 5.2vw, 8rem);
     height: auto;
 }
