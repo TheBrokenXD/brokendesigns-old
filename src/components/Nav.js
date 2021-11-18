@@ -1,9 +1,12 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 //styles
 import '../styles/app.scss';
 
 function nav() {
+
+    const {pathname} = useLocation;
+
     return (
         <div className="whole-nav">
             
@@ -13,16 +16,16 @@ function nav() {
                     <nav>
                         <ul>
                             <li>
-                                <NavLink to="/">home</NavLink>
+                                <NavLink to="/" className="nav-link">home</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/work">work</NavLink>
+                                <NavLink to="/work" className={pathname == '/work' ? 'nav-link active' : 'nav-link'}>work</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/about">about</NavLink>
+                                <NavLink to="/about" className={pathname == '/about' ? 'nav-link active' : 'nav-link'}>about</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/contact">contact</NavLink>
+                                <NavLink to="/contact" className={pathname == '/contact' ? 'nav-link active' : 'nav-link'}>contact</NavLink>
                             </li>
                         </ul>
                     </nav>

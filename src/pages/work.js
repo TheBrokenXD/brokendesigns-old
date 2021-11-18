@@ -1,9 +1,14 @@
 import React from 'react';
+//pages
+import Tabs from "./work/tabs";
+//styles
+import '../styles/app.scss';
 
 function work() {
+
     return (
-        <div>
-            <h1>WIP - hello!</h1>
+        <div className="container">
+            <Tabs />
         </div>
     )
 }

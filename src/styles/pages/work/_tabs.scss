@@ -1,0 +1,40 @@
+.tab-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: clamp(50rem, 52.8vw, 125rem);
+    left: 33%;
+    top: 15%;
+    .work-tabs {
+        display: flex;
+        gap: clamp(1.2rem, 1.5vw, 3.5rem);
+        button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-family: $googlesans;
+            font-size: clamp(1rem, 1.25vw, 2.5rem);
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+        .tabs {
+            color: $black;
+            border-bottom: 2px solid transparent;
+        }
+        .active-tabs {
+            color: $primaryColor;
+            border-bottom: 2px solid $primaryColor;
+        }
+    }
+    .content-tabs {
+        color: $black;
+        font-family: $googlesans;
+        padding-top: clamp(4.5rem, 7.8vh, 7rem);
+        .content {
+            display: none;
+        }
+        .active-content {
+            display: block;
+        }
+    }
+}
