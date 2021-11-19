@@ -19,13 +19,13 @@ function nav() {
                                 <NavLink to="/" className="nav-link">home</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/work" className={pathname == '/work' ? 'nav-link active' : 'nav-link'}>work</NavLink>
+                                <NavLink to="/work" className={pathname === '/work' ? 'nav-link active' : 'nav-link'}>work</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/about" className={pathname == '/about' ? 'nav-link active' : 'nav-link'}>about</NavLink>
+                                <NavLink to="/about" className={pathname === '/about' ? 'nav-link active' : 'nav-link'}>about</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/contact" className={pathname == '/contact' ? 'nav-link active' : 'nav-link'}>contact</NavLink>
+                                <NavLink to="/contact" className={pathname === '/contact' ? 'nav-link active' : 'nav-link'}>contact</NavLink>
                             </li>
                         </ul>
                     </nav>
