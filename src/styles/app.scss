@@ -1,3 +1,4 @@
+@import "./base";
 @import "./variables";
 
 @import "./components/nav";
@@ -5,44 +6,5 @@
 
 @import "./pages/home";
 @import "./pages/work";
-
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 16px;
-    scroll-behavior: smooth;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-    background: $bg;
-    font-family: 'Product Sans', sans-serif;
-    height: 100vh;
-    line-height: 1;
-    overflow: overlay;
-}
-
-a {
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
-}
-
-::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-}
-  
-::-webkit-scrollbar-thumb {
-    background: #DDE3EA;
-    opacity: 0.2;
-}
+@import "./pages/about";
+@import "./pages/contact";

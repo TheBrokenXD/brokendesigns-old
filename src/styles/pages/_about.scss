@@ -1,0 +1,54 @@
+.about-container {
+    position: absolute;
+    top: 30vh;
+    left: 30vw;
+    h1 {
+        color: $primaryColor;
+        font-size: clamp(4rem, 5vw, 18rem);
+        font-weight: 700;
+    }
+    p {
+        color: #41484D;
+        font-size: clamp(1.2rem, 1.8vw, 10rem);
+        font-weight: 400;
+        padding-top: 3.3vw;
+        padding-left: 21%;
+    }
+    .about-link {
+        display: flex;
+        padding-top: 1.4vw;
+        padding-left: 21%;
+        transition: all .3s $ease;
+        h2 {
+            color: $primaryColor;
+            font-size: clamp(2rem, 2.5vw, 12rem);
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+        .about-right-arrow {
+            width: clamp(2rem, 2.5vw, 12rem);
+            height: auto;
+            color: $primaryColor;
+            margin-left: 8px;
+        }
+        &:hover {
+            margin-left: 1rem;
+        }
+    }
+    .about-social {
+        display: flex;
+        gap: 25px;
+        padding-top: 2vw;
+        padding-left: 21%;
+        align-items: center;
+        .about-icon {
+            width: clamp(1.3rem, 1.5vw, 8rem);
+            height: auto;
+            color: #000000;
+            transition: all .3s $ease;
+            &:hover {
+                color: #007FB1;
+            }
+        }
+    }
+}

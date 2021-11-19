@@ -7,7 +7,7 @@ function web() {
         <div className="web-row">
 
             <div className="row-1-web">
-                <img src={workoneweb} className="web-1-banner" />
+                <img src={workoneweb} className="web-1-banner" alt="work" />
                 <div className="web-1-details">
                     <h3>Allens’ Bots</h3>
                     <p>Sort-of an Ecommerce site for a bot-creation tech group! <br/>
