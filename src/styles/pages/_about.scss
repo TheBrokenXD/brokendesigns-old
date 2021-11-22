@@ -1,22 +1,22 @@
 .about-container {
     position: absolute;
-    top: 30vh;
-    left: 30vw;
+    top: 30%;
+    left: 30%;
     h1 {
         color: $primaryColor;
-        font-size: clamp(4rem, 5vw, 18rem);
+        font-size: clamp(4rem, 4.9vw, 18rem);
         font-weight: 700;
     }
     p {
         color: #41484D;
         font-size: clamp(1.2rem, 1.8vw, 10rem);
         font-weight: 400;
-        padding-top: 3.3vw;
+        padding-top: 6vh;
         padding-left: 21%;
     }
     .about-link {
         display: flex;
-        padding-top: 1.4vw;
+        padding-top: 2.5vh;
         padding-left: 21%;
         transition: all .3s $ease;
         h2 {
@@ -38,7 +38,7 @@
     .about-social {
         display: flex;
         gap: 25px;
-        padding-top: 2vw;
+        padding-top: 3.5vh;
         padding-left: 21%;
         align-items: center;
         .about-icon {

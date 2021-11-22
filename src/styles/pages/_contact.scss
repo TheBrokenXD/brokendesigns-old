@@ -1,0 +1,135 @@
+.contact-container {
+    position: absolute;
+    left: 27%;
+    top: 20%;
+    h1 {
+        font-weight: 900;
+        font-size: clamp(3rem, 3.75vw, 7rem);
+        color: $primaryColor;
+        text-transform: uppercase;
+    }
+    form {
+        padding-top: 8.7vh;
+        display: flex;
+        flex-direction: column;
+        gap: 2.7vh;
+        .contact-field {
+            display: flex;
+            gap: 3.6vw;
+            align-items: flex-end;
+            label {
+                color: #001E2E;
+                font-size: clamp(1.5rem, 1.8vw, 5rem);
+                font-weight: 400;
+            }
+            input {
+                outline: 0;
+                border: none;
+                border-bottom: 1vh solid #D2E5F4;
+                color: $black;
+                font-size: clamp(1.5rem, 1.8vw, 5rem);
+                font-family: 'Product Sans', sans-serif;
+                font-weight: 400;
+                width: clamp(30rem, 35vw, 70rem);
+                transition: all .3s $ease;
+                &:focus {
+                    border-bottom: 1vh solid $primaryColor;
+                }
+            }
+            textarea {
+                width: clamp(45rem, 53.3vw, 100rem);
+                height: 20.3vh;
+                border: none;
+                outline: none;
+                background: #EEF4F9;
+                font-size: clamp(1.2rem, 1.25vw, 4rem);
+                font-family: 'Product Sans', sans-serif;
+                font-weight: 500;
+                padding: 1.2vw;
+                margin-top: 4vh;
+            }
+        }
+        .contact-field-sub {
+            display: flex;
+            gap: 3.5vw;
+            align-items: flex-end;
+            label {
+                color: #001E2E;
+                font-size: clamp(1.5rem, 1.8vw, 5rem);
+                font-weight: 400;
+            } 
+            .subject {
+                outline: 0;
+                border: none;
+                border-bottom: 1vh solid #D2E5F4;
+                color: $black;
+                font-size: clamp(1.5rem, 1.8vw, 5rem);
+                font-family: 'Product Sans', sans-serif;
+                font-weight: 400;
+                width: clamp(37rem ,43.4vw, 90rem);
+                transition: all .3s $ease;
+                &:focus {
+                    border-bottom: 1vh solid $primaryColor;
+                }
+            }
+        }
+        .submit-btn {
+            padding: .6vw 1.5vw;
+            outline: none;
+            border: none;
+            background: #00658D;
+            color: #ffffff;
+            font-family: 'Product Sans', sans-serif;
+            box-shadow: none;
+            text-transform: none;
+            font-size: .9vw;
+            transition: all .3s $ease;
+            &:hover {
+                background: #007FB1;
+            }
+        }
+    }
+    .contact-footer {
+        display: flex;
+        gap: 11.7vw;
+        padding-top: 4.6vh;
+        .contact-mail {
+            display: flex;
+            flex-direction: column;
+            gap: 1vh;
+            p {
+                font-size: clamp(1.2rem, 1.25vw, 4rem);
+                color: #191C1E;
+            }
+            a {
+                font-size: clamp(1.2rem, 1.25vw, 4rem);
+                color: #71787E;
+                text-decoration: underline;
+            }
+        }
+        .contact-social {
+            display: flex;
+            flex-direction: column;
+            gap: 1vh;
+            p {
+                font-size: clamp(1.2rem, 1.25vw, 4rem);
+                color: #191C1E;
+            }
+            .contact-links {
+                display: flex;
+                gap: .4vw;
+                a {
+                    font-size: clamp(1.2rem, 1.25vw, 4rem);
+                    color: #71787E;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+textarea::-webkit-input-placeholder {
+    font-size: clamp(1.2rem, 1.25vw, 4rem);
+    color: #C5C6C9;
+}
+

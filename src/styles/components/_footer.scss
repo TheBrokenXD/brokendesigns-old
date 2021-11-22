@@ -1,0 +1,113 @@
+.footer {
+    position: absolute;
+    top: 100%;
+    width: 100vw;
+    height: 100vh;
+    background: #E3F3FF;
+    transform: translateX(-33%);
+    overflow: hidden;
+    .footer-container {
+        padding-left: 26.7vw;
+        padding-top: 11.5vh;
+        display: flex;
+        flex-direction: column;
+        .time-zone {
+            h1 {
+                font-size: 4.8vw;
+                color: $black;
+                font-weight: 500;
+            }
+        }
+        .footer-flex {
+            display: flex;
+            gap: 13.1vw;
+            padding-top: 13.4vh;
+            align-items: center;
+            .feedback {
+                display: flex;
+                flex-direction: column;
+                gap: 2.3vh;
+                span {
+                    font-size: 2.5vw;
+                    color: $black;
+                    font-weight: 500;
+                }
+                .footer-input {
+                    display: flex;
+                    gap: 1.5vw;
+                    input {
+                        outline: none;
+                        border: none;
+                        background: none;
+                        border-bottom: 1px solid #41484D;
+                        padding: 11px 0;
+                        width: 34vw;
+                        color: $black;
+                        font-family: 'Product Sans', sans-serif;
+                        font-size: 1vw;
+                    }
+                    .feedback-btn {
+                        background: none;
+                        outline: none;
+                        border: none;
+                        font-size: 1.8vw;
+                        color: $primaryColor;
+                        font-family: 'Product Sans', sans-serif;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            .footer-socials {
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2vh;
+                        a {
+                            display: flex;
+                            gap: 0.7vw;
+                            font-size: 1.3vw;
+                            font-family: 'Product Sans', sans-serif;
+                            color: $black;
+                            font-weight: 400;
+                        }
+                }
+            }
+        }
+        
+
+        .footer-mail {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4vh;
+            padding-top: 9.2vh;
+            h3 {
+                font-size: 1.8vw;
+                font-weight: 400;
+                color: $black;
+            }
+            a {
+                font-size: 1.8vw;
+                font-weight: 400;
+                color: #71787E;
+            }
+        }
+    }
+    .credits {
+        padding-top: 9.2vh;
+        padding-left: 23.3vw;
+        h1 {
+            font-size: 1.8vw;
+            color: $black;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+    }
+}
+
+input::placeholder {
+    font-family: 'Product Sans', sans-serif;
+    font-weight: 400;
+    color: #41484D;
+    font-size: 1.25vw;
+}

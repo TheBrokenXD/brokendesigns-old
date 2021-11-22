@@ -15,7 +15,7 @@ function Tabs() {
 
   return (
 
-    <div className="tab-container">
+    <div className="container tab-container">
 
         <div className="work-tabs">
             <button className={toggleState === 1 ? "tabs active-tabs" : "tabs"} onClick={() => toggleTab(1)}>Motion</button>

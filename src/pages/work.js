@@ -7,7 +7,7 @@ import '../styles/app.scss';
 function work() {
 
     return (
-        <div className="container">
+        <div>
             <Tabs />
         </div>
     )

@@ -9,6 +9,7 @@
 html {
     font-size: 16px;
     scroll-behavior: smooth;
+    font-family: 'Product Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -19,14 +20,22 @@ body {
     height: 100vh;
     line-height: 1;
     overflow: overlay;
+    min-height: 100%;
+    max-height: 100%;
 }
 
 a {
     text-decoration: none;
+    font-family: 'Product Sans', sans-serif;
 }
 
 li {
     list-style: none;
+    font-family: 'Product Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+    font-family: 'Product Sans', sans-serif;
 }
 
 ::-webkit-scrollbar {

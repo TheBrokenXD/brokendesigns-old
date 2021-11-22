@@ -1,4 +1,6 @@
 import React from 'react';
+//components
+import Footer from "../../components/Footer";
 //assets
 import workone from '../../assets/img/workone.svg';
 import worktwo from '../../assets/img/worktwo.svg';
@@ -109,6 +111,8 @@ function motion() {
 
             </div>
 
+            <Footer />
+            
         </div>
     )
 }

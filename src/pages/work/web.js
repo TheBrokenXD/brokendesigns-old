@@ -1,4 +1,6 @@
 import React from 'react';
+//components
+import Footer from "../../components/Footer";
 //assets
 import workoneweb from '../../assets/img/workoneweb.svg';
 
@@ -14,6 +16,8 @@ function web() {
                     Site: allensmarketingbots.tech</p>
                 </div>
             </div>
+
+            <Footer />
 
         </div>
     )
